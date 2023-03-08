@@ -19,7 +19,7 @@ let oldDiscount = ('0.40');
 
 let finalPrice = (standardPrice * kilometers);
 
-
+// Condizioni
 if(yourAge < 18){
     finalPrice = (finalPrice - (finalPrice * youngDiscount));
 }
@@ -31,6 +31,7 @@ if(yourAge >= 65){
 finalPrice = finalPrice.toFixed(2);
 console.log(finalPrice);
 
+// Output
 document.getElementById('prezzo').innerHTML +=
 `
     <p>${finalPrice}</p>
