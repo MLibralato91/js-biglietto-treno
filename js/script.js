@@ -5,6 +5,7 @@
 // va applicato uno sconto del 40% per gli over 65.
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
+const nome = prompt('Come ti chiami?')
 const kilometers = parseInt(prompt('Quanti km vuoi percorrere?'));
 const yourAge = parseInt(prompt('Quanti anni hai?'));
 console.log(kilometers);
@@ -18,6 +19,7 @@ let oldDiscount = ('0.40');
 
 let finalPrice = (standardPrice * kilometers);
 
+
 if(yourAge < 18){
     finalPrice = (finalPrice - (finalPrice * youngDiscount));
 }
@@ -25,4 +27,22 @@ if(yourAge < 18){
 if(yourAge >= 65){
     finalPrice = (finalPrice - (finalPrice * oldDiscount));
 }
+
+finalPrice = finalPrice.toFixed(2);
 console.log(finalPrice);
+
+document.getElementById('prezzo').innerHTML +=
+`
+    <p>${finalPrice}</p>
+`
+;
+document.getElementById('km').innerHTML +=
+`
+    <p>${kilometers}</p>
+`
+;
+document.getElementById('nome').innerHTML +=
+`
+    <p>${nome}</p>
+`
+;
