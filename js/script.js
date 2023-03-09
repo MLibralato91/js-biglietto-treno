@@ -5,9 +5,9 @@
 // va applicato uno sconto del 40% per gli over 65.
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
-const nome = prompt('Come ti chiami?')
-const kilometers = parseInt(prompt('Quanti km vuoi percorrere?'));
-const yourAge = parseInt(prompt('Quanti anni hai?'));
+let nome = prompt('Come ti chiami?')
+let kilometers = parseInt(prompt('Quanti km vuoi percorrere?'));
+let yourAge = parseInt(prompt('Quanti anni hai?'));
 console.log(kilometers);
 console.log(yourAge);
 
