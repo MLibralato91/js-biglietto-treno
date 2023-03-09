@@ -14,8 +14,8 @@ console.log(yourAge);
 const standardPrice = ('0.21')
 console.log(standardPrice);
 
-let youngDiscount = ('0.20');
-let oldDiscount = ('0.40');
+let youngDiscount = 0.20;
+let oldDiscount = 0.40;
 
 let finalPrice = (standardPrice * kilometers);
 
